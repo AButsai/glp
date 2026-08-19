@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight, FaStar } from 'react-icons/fa'
 
+import { LINK_QUIZ } from '@/constants/base-constants'
 import Benefit from '../components/Benefit'
 import Container from '../components/Container'
 import Countdown from '../components/Countdown'
@@ -167,7 +168,7 @@ const Hero = () => {
 							{/* CTA */}
 							<div className='mt-4'>
 								<Link
-									href='https://joinem.co/pages/intake#howitworks'
+									href={LINK_QUIZ}
 									className='
 										flex
 										w-full
