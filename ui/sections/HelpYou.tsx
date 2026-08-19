@@ -12,7 +12,7 @@ const HelpYou = ({}) => {
 	return (
 		<Section className='pt-20 relative' id='reviews'>
 			<Container>
-				<h2 className='text-4xl font-bold text-center mb-8 md:text-6xl max-w-[768px] mx-auto w-full'>
+				<h2 className='text-4xl font-bold text-center mb-8 md:text-5xl max-w-[768px] mx-auto w-full'>
 					{
 						"We'll help you turn off hunger signals and feel full faster GLP-1 Treatment."
 					}
