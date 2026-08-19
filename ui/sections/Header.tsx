@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<header className='py-4'>
 			<Container className='flex items-center justify-between'>
-				<div className='hidden md:flex justify-between flex-1'>
+				<div className='hidden md:flex justify-between items-center flex-1'>
 					<Logo />
 
 					<nav className='flex items-center gap-3'>
