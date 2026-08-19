@@ -27,5 +27,15 @@ body {
 }
 
 .animate-marquee {
-	animation: marquee 60s linear infinite;
+	animation: marquee 120s linear infinite;
+}
+
+.trust-slider-track {
+	transform: translateX(calc(var(--slide-index) * -100%));
+}
+
+@media (min-width: 768px) {
+	.trust-slider-track {
+		transform: translateX(calc(var(--slide-index) * -50%));
+	}
 }
