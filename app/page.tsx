@@ -1,4 +1,5 @@
 import Section from '@/ui/components/Section'
+import FaqSection from '@/ui/sections/FaqSection'
 import HelpYou from '@/ui/sections/HelpYou'
 import Hero from '@/ui/sections/Hero'
 import MarqueeCenter from '@/ui/sections/MarqueeCenter'
@@ -19,6 +20,7 @@ export default function Home() {
 				<ReviewsSection />
 			</Section>
 			<ProductSection />
+			<FaqSection />
 		</>
 	)
 }

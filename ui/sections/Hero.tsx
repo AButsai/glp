@@ -11,17 +11,19 @@ import Section from '../components/Section'
 
 const Hero = () => {
 	return (
-		<Section>
+		<Section
+			className='rounded-[50px]
+						bg-linear-to-br
+						from-[#DCF6EC]
+						via-[#D3EDE3]
+						to-[#C5E1D3] max-w-[98%] mx-auto'
+		>
 			<Container>
 				{/* Hero background */}
 				<div
 					className='
 						overflow-hidden
-						rounded-3xl
-						bg-linear-to-br
-						from-[#DCF6EC]
-						via-[#D3EDE3]
-						to-[#C5E1D3]
+						
 						p-4
 						sm:p-6
 						md:p-8

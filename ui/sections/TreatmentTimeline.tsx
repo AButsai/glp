@@ -7,7 +7,10 @@ import TreatmentTimelineBlock from '../components/TreatmentTimelineBlock'
 
 const TreatmentTimeline = ({}) => {
 	return (
-		<Section className='mt-10 rounded-4xl bg-gray-200 py-[120px] lg:py-[144px] w-full max-w-[98%] mx-auto'>
+		<Section
+			className='mt-10 rounded-4xl bg-gray-200 py-[120px] lg:py-[144px] w-full max-w-[98%] mx-auto'
+			id='how'
+		>
 			<Container className='flex flex-col gap-5 items-center lg:flex-row'>
 				<div className='px-12'>
 					<h2 className='text-[60px] leading-none font-extralight font-sans mb-8'>

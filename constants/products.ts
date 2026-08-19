@@ -1,3 +1,5 @@
+import { LINK_QUIZ } from './base-constants'
+
 export const products = [
 	{
 		id: 1,
@@ -5,7 +7,7 @@ export const products = [
 		subtitle: 'Injections & Gum',
 		image: '/sema_bundle.avif',
 		badge: 'In Stock · Up to $200 OFF',
-		href: '/semaglutide',
+		href: LINK_QUIZ,
 	},
 	{
 		id: 2,
@@ -13,6 +15,6 @@ export const products = [
 		subtitle: 'Injections & Gum',
 		image: '/tirz_bundle.avif',
 		badge: 'In Stock · Up to $250 OFF',
-		href: '/tirzepatide',
+		href: LINK_QUIZ,
 	},
 ]

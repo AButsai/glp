@@ -1,4 +1,5 @@
 'use client'
+import { LINK_QUIZ } from '@/constants/base-constants'
 import Link from 'next/link'
 import { useState } from 'react'
 import { RiCloseLargeFill } from 'react-icons/ri'
@@ -38,7 +39,7 @@ const MobNavigate = () => {
 						<Link className='text-xl' onClick={handleOpen} href='#faq'>
 							FAQ`s
 						</Link>
-						<Link className='text-xl' onClick={handleOpen} href='#pricing'>
+						<Link className='text-xl' onClick={handleOpen} href={LINK_QUIZ}>
 							Pricing
 						</Link>
 					</nav>

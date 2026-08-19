@@ -10,7 +10,7 @@ import VideoTestimonialsSlider from '../components/VideoTestimonialsSlider'
 
 const HelpYou = ({}) => {
 	return (
-		<Section className='pt-20 relative'>
+		<Section className='pt-20 relative' id='reviews'>
 			<Container>
 				<h2 className='text-4xl font-bold text-center mb-8 md:text-6xl max-w-[768px] mx-auto w-full'>
 					{

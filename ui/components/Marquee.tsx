@@ -1,14 +1,16 @@
 import { FC } from 'react'
 import { FaCheck } from 'react-icons/fa'
+import { twMerge } from 'tailwind-merge'
 
 interface Props {
 	items: string[]
 	mode: 'img' | 'text'
+	className?: string
 }
 
-const Marquee: FC<Props> = ({ items, mode }) => {
+const Marquee: FC<Props> = ({ items, mode, className }) => {
 	return (
-		<div className='w-full overflow-hidden  py-3'>
+		<div className={twMerge('w-full overflow-hidden  py-3', className)}>
 			<div className='flex w-max animate-marquee'>
 				{Array.from({ length: 6 }).map((_, groupIndex) => (
 					<div

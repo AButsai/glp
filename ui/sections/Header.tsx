@@ -1,3 +1,4 @@
+import { LINK_QUIZ } from '@/constants/base-constants'
 import Link from 'next/link'
 import Container from '../components/Container'
 import LinkQuiz from '../components/LinkQuiz'
@@ -6,7 +7,7 @@ import MobNavigate from '../components/MobNavigate'
 
 const Header = () => {
 	return (
-		<header className='py-4 shadow-md bg-white'>
+		<header className='py-4'>
 			<Container className='flex items-center justify-between'>
 				<div className='hidden md:flex justify-between flex-1'>
 					<Logo />
@@ -32,7 +33,7 @@ const Header = () => {
 						</Link>
 						<Link
 							className='transition duration-300 hover:text-[#0f7b5c]'
-							href='#pricing'
+							href={LINK_QUIZ}
 						>
 							Pricing
 						</Link>

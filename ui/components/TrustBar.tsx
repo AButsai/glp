@@ -35,7 +35,6 @@ const TrustBar = () => {
 
 	return (
 		<div className='w-full rounded-2xl border border-gray-300 py-4'>
-			{/* Mobile / Tablet */}
 			<div className='overflow-hidden lg:hidden'>
 				<ul
 					onTransitionEnd={handleTransitionEnd}
@@ -69,7 +68,7 @@ const TrustBar = () => {
 								width={24}
 								height={24}
 								alt=''
-								className='shrink-0'
+								className='shrink-0 h-auto w-auto'
 							/>
 
 							<p className='whitespace-nowrap text-sm md:text-base'>
@@ -80,7 +79,6 @@ const TrustBar = () => {
 				</ul>
 			</div>
 
-			{/* Desktop */}
 			<ul className='hidden grid-cols-4 lg:grid'>
 				{trustBarItems.map(item => (
 					<li key={item.id} className='flex items-center justify-center gap-2'>
@@ -89,7 +87,7 @@ const TrustBar = () => {
 							width={24}
 							height={24}
 							alt=''
-							className='shrink-0'
+							className='shrink-0 h-auto w-auto'
 						/>
 
 						<p className='whitespace-nowrap'>{item.title}</p>
