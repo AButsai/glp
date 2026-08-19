@@ -32,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 			data-scroll-behavior='smooth'
 		>
 			<body className='flex min-h-full flex-col'>
-				<Marquee items={itemsTopHeader} mode='text' />
+				<Marquee items={itemsTopHeader} mode='text' className='bg-white' />
 				<Header />
 
 				<main className='flex-1'>{children}</main>
