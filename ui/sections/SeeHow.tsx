@@ -1,12 +1,10 @@
 'use client'
 
 import BeforeAfter from '../components/BeforeAfter'
+import ButtonRatingBlock from '../components/ButtonRatingBlock'
 import Container from '../components/Container'
-import GuaranteeBar from '../components/GuaranteeBar'
-import LinkQuiz from '../components/LinkQuiz'
 import Section from '../components/Section'
 import TrustBar from '../components/TrustBar'
-import TrustRating from '../components/TrustRating'
 import WeightLossCalculator from '../components/WeightLossCalculator'
 
 const SeeHow = ({}) => {
@@ -25,20 +23,7 @@ const SeeHow = ({}) => {
 					<WeightLossCalculator />
 				</div>
 				<TrustBar />
-				<div className='mt-8 flex items-stretch justify-center gap-4'>
-					<LinkQuiz
-						title='Get started'
-						className='bg-black text-white rounded-4xl p-5 text-xl hover:bg-[#0F7B5C] lg:w-50'
-					/>
-					<LinkQuiz
-						title='See pricing'
-						className='bg-white text-black rounded-4xl p-5 text-xl border border-gray-300 hover:bg-[#0F7B5C] lg:w-50 hover:text-white'
-					/>
-				</div>
-				<div className='my-5'>
-					<GuaranteeBar />
-				</div>
-				<TrustRating />
+				<ButtonRatingBlock />
 			</Container>
 		</Section>
 	)
