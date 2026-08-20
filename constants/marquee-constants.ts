@@ -1,3 +1,10 @@
+import {
+	LuBadgeCheck,
+	LuClipboardCheck,
+	LuStar,
+	LuStethoscope,
+} from 'react-icons/lu'
+
 export const itemsTopHeader = [
 	'Licensed Healthcare providers',
 	'Accessible & Affordable',
@@ -21,22 +28,22 @@ export const itemsCenter = [
 export const trustBarItems = [
 	{
 		id: 1,
-		href: '/trust-bar/hospital.png',
-		title: 'US-Certified Pharmacy',
+		icon: LuStar,
+		text: 'US-Certified Pharmacy',
 	},
 	{
 		id: 2,
-		href: '/trust-bar/personalized.jpg',
-		title: 'Personalized Treatments',
+		icon: LuClipboardCheck,
+		text: 'Personalized Treatments',
 	},
 	{
 		id: 3,
-		href: '/trust-bar/trusted.webp',
-		title: 'Trusted by 125k+ Americans',
+		icon: LuBadgeCheck,
+		text: 'Trusted by 125k+ Americans',
 	},
 	{
 		id: 4,
-		href: '/trust-bar/medical.webp',
-		title: '1:1 Medical Support',
+		icon: LuStethoscope,
+		text: '1:1 Medical Support',
 	},
 ]
