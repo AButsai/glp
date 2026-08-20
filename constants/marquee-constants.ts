@@ -5,7 +5,7 @@ export const itemsTopHeader = [
 ]
 
 export const itemsTopHeaderSecond = [
-	'Save Big this SUMMER. SAME PRICE EVERY MONTH! STARTING at Semaglutide: $97 | Tirzepatide: $147. <span style="color: red">OFFER ENDS AUGUST 25TH AT MIDNIGHT!</span>',
+	'Save Big this SUMMER. SAME PRICE EVERY MONTH! STARTING at Semaglutide: $97 | Tirzepatide: $147. <span style="color: red; text-decoration: underline;">OFFER ENDS AUGUST 25TH AT MIDNIGHT!</span>',
 ]
 
 export const itemsCenter = [

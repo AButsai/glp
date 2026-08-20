@@ -38,13 +38,13 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 				<Marquee
 					items={itemsTopHeader}
 					mode='text'
-					className='bg-white'
+					className='bg-white border-b border-b-gray-200'
 					isIcon
 				/>
 				<Marquee
 					items={itemsTopHeaderSecond}
 					mode='text'
-					className='bg-white underline font-semibold'
+					className='bg-yellow-300 underline font-semibold'
 					isIcon={false}
 				/>
 				<Header />

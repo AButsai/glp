@@ -19,7 +19,6 @@ const Hero = () => {
 						to-[#C5E1D3] max-w-[98%] mx-auto'
 		>
 			<Container>
-				{/* Hero background */}
 				<div
 					className='
 						overflow-hidden
@@ -33,7 +32,6 @@ const Hero = () => {
 						xl:py-12
 					'
 				>
-					{/* Centered content */}
 					<div
 						className='
 							mx-auto
@@ -49,9 +47,7 @@ const Hero = () => {
 							xl:gap-20
 						'
 					>
-						{/* Left */}
 						<div className='w-full min-w-0'>
-							{/* Rating */}
 							<div
 								className='
 									mb-3
@@ -77,7 +73,6 @@ const Hero = () => {
 								</p>
 							</div>
 
-							{/* Title */}
 							<h1
 								className='
 									mb-5
@@ -98,7 +93,6 @@ const Hero = () => {
 								— for life.
 							</h1>
 
-							{/* Price / Timer */}
 							<div className='w-full'>
 								<div
 									className='
@@ -140,7 +134,7 @@ const Hero = () => {
 									</div>
 
 									<div className='mt-4'>
-										<Countdown targetDate='2026-08-21T07:42:36+03:00' />
+										<Countdown />
 									</div>
 
 									<Image
@@ -185,7 +179,6 @@ const Hero = () => {
 								</Benefit>
 							</div>
 
-							{/* CTA */}
 							<div className='mt-4'>
 								<Link
 									href={LINK_QUIZ}
@@ -226,7 +219,6 @@ const Hero = () => {
 									</span>
 								</Link>
 
-								{/* Benefits */}
 								<div
 									className='
 										mt-4
@@ -246,7 +238,6 @@ const Hero = () => {
 							</div>
 						</div>
 
-						{/* Right image */}
 						<div
 							className='
 								flex
@@ -254,7 +245,7 @@ const Hero = () => {
 								items-end
 								justify-center
 								lg:h-full
-								lg:justify-end
+								
 							'
 						>
 							<div
@@ -265,7 +256,7 @@ const Hero = () => {
 									rounded-b-[42px]
 									sm:max-w-[420px]
 									md:max-w-[480px]
-									lg:max-w-[520px]
+									lg:max-w-[395px]
 								'
 							>
 								<Image

@@ -22,7 +22,7 @@ const TreatmentTimeline = ({}) => {
 					<TreatmentTimelineBlock />
 				</div>
 				<div className='rounded-4xl overflow-hidden w-full max-w-[512px]'>
-					<Image src={'/phone.avif'} width={1080} height={1252} alt='' />
+					<Image src={'/phone.png'} width={1080} height={1252} alt='' />
 				</div>
 			</Container>
 		</Section>
