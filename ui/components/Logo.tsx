@@ -8,8 +8,8 @@ interface Props {
 
 const Logo: FC<Props> = ({ className }) => {
 	return (
-		<div className={twMerge('w-12 h-12', className)}>
-			<Image src={'/brand-peop.png'} width={1254} height={1254} alt='' />
+		<div className={twMerge('w-36 h-8 md:w-44 md:h-9', className)}>
+			<Image src={'/logo.png'} width={1318} height={269} alt='' />
 		</div>
 	)
 }

@@ -5,10 +5,11 @@ import { twMerge } from 'tailwind-merge'
 interface Props {
 	items: string[]
 	mode: 'img' | 'text'
+	isIcon: boolean
 	className?: string
 }
 
-const Marquee: FC<Props> = ({ items, mode, className }) => {
+const Marquee: FC<Props> = ({ items, mode, isIcon = false, className }) => {
 	return (
 		<div className={twMerge('w-full overflow-hidden  py-3', className)}>
 			<div className='flex w-max animate-marquee'>
@@ -24,9 +25,12 @@ const Marquee: FC<Props> = ({ items, mode, className }) => {
 									key={`${groupIndex}-${item}`}
 									className='flex shrink-0 items-center gap-2 whitespace-nowrap text-sm md:text-base'
 								>
-									<FaCheck className='size-4 shrink-0 text-[#0F7B5C]' />
+									{isIcon && (
+										<FaCheck className='size-4 shrink-0 text-[#0F7B5C]' />
+									)}
 
-									<span>{item}</span>
+									{/* <span>{item}</span> */}
+									<span dangerouslySetInnerHTML={{ __html: item }} />
 								</div>
 							) : (
 								<div

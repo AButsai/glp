@@ -7,9 +7,9 @@ interface BenefitProps {
 
 const Benefit = ({ children }: BenefitProps) => {
 	return (
-		<p className='flex items-center gap-2 text-xs leading-tight sm:text-sm'>
+		<p className='flex items-center gap-2 text-xs leading-tight sm:text-sm '>
 			<FaCheckCircle className='size-4 shrink-0 text-[#0F7B5C] sm:size-5' />
-			<span>{children}</span>
+			<span className='flex items-center gap-1'>{children}</span>
 		</p>
 	)
 }

@@ -3,7 +3,10 @@ import Header from '@/ui/sections/Header'
 import type { Metadata } from 'next'
 import { DM_Serif_Display, Inter } from 'next/font/google'
 
-import { itemsTopHeader } from '@/constants/marquee-constants'
+import {
+	itemsTopHeader,
+	itemsTopHeaderSecond,
+} from '@/constants/marquee-constants'
 import Marquee from '@/ui/components/Marquee'
 import './globals.css'
 
@@ -32,7 +35,18 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 			data-scroll-behavior='smooth'
 		>
 			<body className='flex min-h-full flex-col'>
-				<Marquee items={itemsTopHeader} mode='text' className='bg-white' />
+				<Marquee
+					items={itemsTopHeader}
+					mode='text'
+					className='bg-white'
+					isIcon
+				/>
+				<Marquee
+					items={itemsTopHeaderSecond}
+					mode='text'
+					className='bg-white underline font-semibold'
+					isIcon={false}
+				/>
 				<Header />
 
 				<main className='flex-1'>{children}</main>
