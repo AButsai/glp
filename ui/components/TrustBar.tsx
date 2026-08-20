@@ -1,7 +1,6 @@
 'use client'
 
 import { trustBarItems } from '@/constants/marquee-constants'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 const TrustBar = () => {
@@ -63,16 +62,10 @@ const TrustBar = () => {
 								md:basis-1/2
 							'
 						>
-							<Image
-								src={item.href}
-								width={24}
-								height={24}
-								alt=''
-								className='shrink-0 h-auto w-auto'
-							/>
+							<item.icon className='text-[#CE9A97]' />
 
 							<p className='whitespace-nowrap text-sm md:text-base'>
-								{item.title}
+								{item.text}
 							</p>
 						</li>
 					))}
@@ -82,15 +75,9 @@ const TrustBar = () => {
 			<ul className='hidden grid-cols-4 lg:grid'>
 				{trustBarItems.map(item => (
 					<li key={item.id} className='flex items-center justify-center gap-2'>
-						<Image
-							src={item.href}
-							width={24}
-							height={24}
-							alt=''
-							className='shrink-0 h-auto w-auto'
-						/>
+						<item.icon className='text-[#CE9A97]' />
 
-						<p className='whitespace-nowrap'>{item.title}</p>
+						<p className='whitespace-nowrap'>{item.text}</p>
 					</li>
 				))}
 			</ul>

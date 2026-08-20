@@ -35,19 +35,15 @@ export const faqItems: FaqItem[] = [
 		content: [
 			{
 				type: 'paragraph',
-				text: 'Embody allows you to get prescription weight loss medications such as semaglutide & tirzepatide from the comfort of your home. Your pricing is one simple monthly price and includes medication, supplies, doctor review and shipping.',
+				text: "Embody allows you to get prescription weight loss medications such as semaglutide & tirzepatide from the comfort of your home. Your pricing is one simple monthly price and includes medication, supplies, doctor review and shipping. Once you've selected and paid for the first month of your chosen medication, you will need to complete an intake form for the doctor to review and approve your prescription. Once your doctor approves your prescription, our pharmacies will ship out your medication within 2 business days.",
 			},
 			{
 				type: 'paragraph',
-				text: "Once you've selected and paid for the first month of your chosen medication, you will need to complete an intake form for the doctor to review and approve your prescription. Once your doctor approves your prescription, our pharmacies will ship out your medication within 2 business days.",
-			},
-			{
-				type: 'paragraph',
-				text: 'When you run out of your medication, you simply let your doctor know in your Embody Patient Portal and your doctor will review your dosage, adjust it if needed, and write you a new prescription that gets delivered next day via UPS or FedEx.',
+				text: 'When you run out of your medication, you simply let your doctor know in your Embody Patient Portal and your Doctor will review your dosage, adjust it if needed, and write you a new prescription that gets delivered next day via UPS or FedEx.',
 			},
 			{
 				type: 'note',
-				text: '*If for any reason your prescription is not approved, you will receive a full refund.',
+				text: 'If for any reason your prescription is not approved, you will receive a full refund.',
 			},
 		],
 	},
@@ -81,7 +77,7 @@ export const faqItems: FaqItem[] = [
 				items: [
 					'Complete the health qualifier (should only take 5 minutes).',
 					'Select your preferred prescription.',
-					'Pay for the first month of your prescription.*',
+					'Pay for the first month of your prescription.',
 					'Complete medical intake form by logging into your Embody patient portal.',
 					'Your medical practitioner is expected to review your chart within 24 hrs and often less than 5 hrs.',
 					'After a thorough medical evaluation, your provider will determine whether a prescription is appropriate.',
@@ -90,25 +86,112 @@ export const faqItems: FaqItem[] = [
 			},
 			{
 				type: 'note',
-				text: '*If for any reason your prescription is not approved, you will receive a full refund.',
+				text: 'If for any reason your prescription is not approved, you will receive a full refund.',
 			},
 		],
 	},
 	{
 		id: 4,
-		question: 'What States/Jurisdictions are eligible?',
-		image: '/question/avatar-6.png',
+		question: 'What States/Juristictions are eligible?',
+		image: '/question/avatar-4.png',
 		content: [
 			{
 				type: 'paragraph',
-				text: 'Embody currently provides services to all US States!',
+				text: 'Embody currently provides services to all US States except Louisiana. In Nebraska, services are limited to patients 19 years of age or older.',
 			},
 		],
 	},
 	{
 		id: 5,
-		question: 'How do I take my medication?',
+		question: 'How does the pricing work?',
+		image: '/question/avatar-5.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: 'Embody partners with licensed doctors and pharmacy to offer competitive pricing on compounded GLP-1 weight loss medications. Our pricing is transparent with no hidden costs or monthly fees.',
+			},
+			{
+				type: 'paragraph',
+				text: "Competitors will often charge 'access' or membership fees. Embody does not have those so that pricing is extremely clear and you don't get surprise costs.",
+			},
+		],
+	},
+	{
+		id: 6,
+		question: 'What if I need to cancel?',
+		image: '/question/avatar-6.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: 'With Embody there are no contracts for our month to month pricing. We also offer subscribe and save discounts where customers will agree to a subscription length for stated monthly discount. Month to month customers can cancel their shipment anytime by calling us at (347) 269-4270.',
+			},
+			{
+				type: 'paragraph',
+				text: "We want to make sure that our customers love the results of our treatment plans so we offer a patient satisfaction guarantee. If you are unhappy with your results, let us know and we'll make it right.",
+			},
+		],
+	},
+	{
+		id: 7,
+		question: 'Is the medication real semaglutide & tirzepatide?',
 		image: '/question/avatar-7.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: 'Yes, both of our GLP-1 weight loss medications are real prescription medications that are prescribed by a doctor and compounded by a real US based pharmacy. We offer only the best Semaglutide and Tirzepatide medications for weightloss management for customers that meet the qualifications required for GLP-1 medications. These are the same medications that people are talking about and getting real results with all over social media.',
+			},
+		],
+	},
+	{
+		id: 8,
+		question: "What is the dosage I'll be taking?",
+		image: '/question/avatar-8.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: 'Our medical practitioner will ultimately decide what is right for you. However, our standard protocol for many patients is:',
+			},
+			{
+				type: 'subtitle',
+				text: 'Medication 1',
+			},
+			{
+				type: 'unordered-list',
+				items: [
+					'0.25mg/week for the first 4 weeks',
+					'0.5 mg/week for the next 8 weeks',
+					'Dosage will include Ondanestron (brand name Zofran®)',
+				],
+			},
+			{
+				type: 'subtitle',
+				text: 'Medication 2',
+			},
+			{
+				type: 'unordered-list',
+				items: ['10/mg for the first 4 weeks', '20/mg for the next 8 weeks'],
+			},
+		],
+	},
+	{
+		id: 9,
+		question: 'Where do my prescriptions come from?',
+		image: '/question/avatar-9.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: 'Medications prescribed through Embody are dispensed by U.S.-based 503A compounding pharmacies. These pharmacies prepare medications individually in response to a prescription from a licensed healthcare provider and must follow applicable federal and state compounding regulations, as well as professional standards such as USP 795 and USP 797.',
+			},
+			{
+				type: 'paragraph',
+				text: 'Compounded medications are prepared for individual patients when commercially available alternatives are not suitable. They are not FDA-approved, but 503A compounding pharmacies are licensed by state pharmacy boards and operate under federal compounding laws.',
+			},
+		],
+	},
+	{
+		id: 10,
+		question: 'How do I take my medication?',
+		image: '/question/avatar-10.png',
 		content: [
 			{
 				type: 'subtitle',
@@ -118,32 +201,42 @@ export const faqItems: FaqItem[] = [
 				type: 'paragraph',
 				text: 'You will be provided with small insulin sized needles along with your medication. Your doctor will explain how and when to take your medication during your telemed visit. You will start with a low dose to begin your treatment once per week as your body gets used to the medication and increase your dose every 4 weeks until you are at your full dosage. Medication will be administered by injecting into the fatty area on your stomach weekly.',
 			},
+		],
+	},
+	{
+		id: 11,
+		question: 'How is it shipped?',
+		image: '/question/avatar-11.png',
+		content: [
 			{
 				type: 'paragraph',
-				text: "For our non-injectable options, it's important to follow the correct steps to ensure proper absorption and effectiveness:",
-			},
-			{
-				type: 'subtitle',
-				text: 'For Compounded Semaglutide & Tirzepatide Medicated Gum:',
+				text: "Prescriptions received before 2 pm central time will be shipped the same day. Your prescription will be shipped next-day via UPS in a temperature controlled package. To ensure temperature management and weekend orders (Friday-Sunday) will be shipped Monday. You'll receive a tracking number for every shipment.",
 			},
 			{
 				type: 'paragraph',
-				text: 'Place one piece of gum in your mouth and chew slowly until the liquid core releases. Continue chewing for 10–15 minutes to allow the medication to absorb through the oral tissues. Use the gum as prescribed by your healthcare provider (commonly once daily), with higher dosing options available if recommended as your treatment progresses.',
-			},
-			{
-				type: 'paragraph',
-				text: 'For best absorption, avoid eating or drinking for at least 15 minutes before and after chewing the gum. Following these instructions will help you get the most out of your GLP-1 treatment. If you have any questions, please contact our support team for assistance.',
+				text: 'Each shipment is fully insured for lost prescriptions. The only exception for insured product replacement is if a patient provides incorrect shipping information. If this occurs, please speak with customer service by calling us at (347) 269-4270.',
 			},
 		],
 	},
 	{
-		id: 6,
-		question: "What happens if my prescription isn't approved?",
-		image: '/question/avatar-8.png',
+		id: 12,
+		question: 'How much weight will I lose?',
+		image: '/question/avatar-12.png',
 		content: [
 			{
 				type: 'paragraph',
-				text: 'If for any reason your prescription is not approved, you will receive a full refund.',
+				text: 'Individual weight-loss is dependent on a number of factors but on average patients using these weight loss medications report an average loss of 1.5% of their body weight per week. Over 12 weeks, it can be as high as 10%. This equates to a weight loss of 10–20 pounds for a 200 pound person.',
+			},
+		],
+	},
+	{
+		id: 13,
+		question: 'How do I contact support?',
+		image: '/question/avatar-13.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: "You can reach our friendly support team by calling us at (347) 269-4270. For faster service, visit our Patient Services page to submit a message, request a refill, or check order status. We're here to help!",
 			},
 		],
 	},

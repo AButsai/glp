@@ -5,7 +5,7 @@ import Section from '../components/Section'
 
 const FaqSection = () => {
 	return (
-		<Section className='py-20 bg-white'>
+		<Section className='py-20 bg-white' id='faq'>
 			<Container>
 				<div className='mb-10'>
 					<h2 className='text-[60px] text-center'>{"We've got you."}</h2>
