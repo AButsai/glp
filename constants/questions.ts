@@ -30,16 +30,16 @@ export interface FaqItem {
 export const faqItems: FaqItem[] = [
 	{
 		id: 1,
-		question: 'How does Embody work?',
+		question: 'How does VelmoRx work?',
 		image: '/question/avatar-1.png',
 		content: [
 			{
 				type: 'paragraph',
-				text: "Embody allows you to get prescription weight loss medications such as semaglutide & tirzepatide from the comfort of your home. Your pricing is one simple monthly price and includes medication, supplies, doctor review and shipping. Once you've selected and paid for the first month of your chosen medication, you will need to complete an intake form for the doctor to review and approve your prescription. Once your doctor approves your prescription, our pharmacies will ship out your medication within 2 business days.",
+				text: "VelmoRx allows you to get prescription weight loss medications such as semaglutide & tirzepatide from the comfort of your home. Your pricing is one simple monthly price and includes medication, supplies, doctor review and shipping. Once you've selected and paid for the first month of your chosen medication, you will need to complete an intake form for the doctor to review and approve your prescription. Once your doctor approves your prescription, our pharmacies will ship out your medication within 2 business days.",
 			},
 			{
 				type: 'paragraph',
-				text: 'When you run out of your medication, you simply let your doctor know in your Embody Patient Portal and your Doctor will review your dosage, adjust it if needed, and write you a new prescription that gets delivered next day via UPS or FedEx.',
+				text: 'When you run out of your medication, you simply let your doctor know in your VelmoRx Patient Portal and your Doctor will review your dosage, adjust it if needed, and write you a new prescription that gets delivered next day via UPS or FedEx.',
 			},
 			{
 				type: 'note',
@@ -54,15 +54,15 @@ export const faqItems: FaqItem[] = [
 		content: [
 			{
 				type: 'paragraph',
-				text: 'Embody has taken numerous steps to ensure compliance and safety for our patients.',
+				text: 'VelmoRx has taken numerous steps to ensure compliance and safety for our patients.',
 			},
 			{
 				type: 'ordered-list',
 				items: [
 					"All doctors have been properly vetted to ensure they're licensed to prescribe GLP-1 medications in your state.",
 					'Pharmacies are US based 503A compounding pharmacies.',
-					'Embody has its own medical director who is a practicing physician and has reviewed our doctor and pharmacy network to ensure your safety.',
-					"Embody maintains LegitScript certification which is the telemedicine industry's most recognized compliance authority. They have independently verified Embody pharmacies, doctors network and software providers to ensure safety and privacy protection.",
+					'VelmoRx has its own medical director who is a practicing physician and has reviewed our doctor and pharmacy network to ensure your safety.',
+					"VelmoRx maintains LegitScript certification which is the telemedicine industry's most recognized compliance authority. They have independently verified VelmoRx pharmacies, doctors network and software providers to ensure safety and privacy protection.",
 				],
 			},
 		],
@@ -78,7 +78,7 @@ export const faqItems: FaqItem[] = [
 					'Complete the health qualifier (should only take 5 minutes).',
 					'Select your preferred prescription.',
 					'Pay for the first month of your prescription.',
-					'Complete medical intake form by logging into your Embody patient portal.',
+					'Complete medical intake form by logging into your VelmoRx patient portal.',
 					'Your medical practitioner is expected to review your chart within 24 hrs and often less than 5 hrs.',
 					'After a thorough medical evaluation, your provider will determine whether a prescription is appropriate.',
 					'If your prescription is approved, our pharmacy will ship your medication using 1-day FedEx or UPS.',
@@ -97,7 +97,7 @@ export const faqItems: FaqItem[] = [
 		content: [
 			{
 				type: 'paragraph',
-				text: 'Embody currently provides services to all US States except Louisiana. In Nebraska, services are limited to patients 19 years of age or older.',
+				text: 'VelmoRx currently provides services to all US States except Louisiana. In Nebraska, services are limited to patients 19 years of age or older.',
 			},
 		],
 	},
@@ -108,11 +108,11 @@ export const faqItems: FaqItem[] = [
 		content: [
 			{
 				type: 'paragraph',
-				text: 'Embody partners with licensed doctors and pharmacy to offer competitive pricing on compounded GLP-1 weight loss medications. Our pricing is transparent with no hidden costs or monthly fees.',
+				text: 'VelmoRx partners with licensed doctors and pharmacy to offer competitive pricing on compounded GLP-1 weight loss medications. Our pricing is transparent with no hidden costs or monthly fees.',
 			},
 			{
 				type: 'paragraph',
-				text: "Competitors will often charge 'access' or membership fees. Embody does not have those so that pricing is extremely clear and you don't get surprise costs.",
+				text: "Competitors will often charge 'access' or membership fees. VelmoRx does not have those so that pricing is extremely clear and you don't get surprise costs.",
 			},
 		],
 	},
@@ -123,7 +123,7 @@ export const faqItems: FaqItem[] = [
 		content: [
 			{
 				type: 'paragraph',
-				text: 'With Embody there are no contracts for our month to month pricing. We also offer subscribe and save discounts where customers will agree to a subscription length for stated monthly discount. Month to month customers can cancel their shipment anytime by calling us at (347) 269-4270.',
+				text: 'With VelmoRx there are no contracts for our month to month pricing. We also offer subscribe and save discounts where customers will agree to a subscription length for stated monthly discount. Month to month customers can cancel their shipment anytime by calling us at (347) 269-4270.',
 			},
 			{
 				type: 'paragraph',
@@ -180,7 +180,7 @@ export const faqItems: FaqItem[] = [
 		content: [
 			{
 				type: 'paragraph',
-				text: 'Medications prescribed through Embody are dispensed by U.S.-based 503A compounding pharmacies. These pharmacies prepare medications individually in response to a prescription from a licensed healthcare provider and must follow applicable federal and state compounding regulations, as well as professional standards such as USP 795 and USP 797.',
+				text: 'Medications prescribed through VelmoRx are dispensed by U.S.-based 503A compounding pharmacies. These pharmacies prepare medications individually in response to a prescription from a licensed healthcare provider and must follow applicable federal and state compounding regulations, as well as professional standards such as USP 795 and USP 797.',
 			},
 			{
 				type: 'paragraph',
