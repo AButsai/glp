@@ -46,15 +46,15 @@ const HelpYou = ({}) => {
 				<ButtonRatingBlock />
 			</Container>
 			<HelpYouImage
-				src='/inj_tirz.webp'
+				src='/product-1.png'
 				className='top-0 left-1/2 -translate-1/2 rotate-85 lg:left-[40.5%]'
 			/>
 			<HelpYouImage
-				src='/inj_sema.webp'
+				src='/product-2.png'
 				className='top-[31%] -left-[30px] -rotate-20 lg:top-[11.5%] lg:left-[50px]'
 			/>
 			<HelpYouImage
-				src='/inj_tirz.webp'
+				src='/product-1.png'
 				className='top-[31%] -right-[70px] rotate-30 lg:top-[31%] lg:right-[25px] lg:rotate-50'
 			/>
 		</Section>

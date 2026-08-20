@@ -90,13 +90,12 @@ const Hero = () => {
 									xl:text-7xl
 								'
 							>
-								The only GLP-1
+								Lock in
 								<br />
-								company who{' '}
 								<span className='italic text-[#0F7B5C]'>
-									locks your price
+									your best GLP-1 price
 								</span>{' '}
-								in for life.
+								— for life.
 							</h1>
 
 							{/* Price / Timer */}
@@ -145,26 +144,45 @@ const Hero = () => {
 									</div>
 
 									<Image
-										src='/inj_sema.avif'
-										width={80}
-										height={182}
+										src='/product-bundle.png'
+										width={120}
+										height={164}
 										alt='GLP-1 medication'
 										className='
 											absolute
 											bottom-2
 											right-2
 											h-auto
-											w-[42px]
+											w-[100px]
 											sm:right-4
 											sm:w-[55px]
-											md:w-[65px]
+											md:w-[120px]
 										'
 									/>
 								</div>
 
-								<p className='mt-1 text-right text-[11px] sm:text-sm'>
+								{/* <p className='mt-1 text-right text-[11px] sm:text-sm'>
 									Compound GLP-1 & GLP-1 + GIP
-								</p>
+								</p> */}
+							</div>
+
+							<div className='space-y-1 mt-5'>
+								<Benefit>
+									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
+									Same price, every dose, every month.
+								</Benefit>
+								<Benefit>
+									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
+									Made in USA & Trusted by over 100,000
+								</Benefit>
+								<Benefit>
+									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
+									Prescription & online medical visits included.
+								</Benefit>
+								<Benefit>
+									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
+									Free shipping.Arrives in 1-2 days.
+								</Benefit>
 							</div>
 
 							{/* CTA */}
@@ -220,10 +238,10 @@ const Hero = () => {
 										sm:gap-x-8
 									'
 								>
+									<Benefit>$0 until a doctor approves you</Benefit>
+									<Benefit>No Hidden Fees</Benefit>
+									<Benefit>No Monthly Membership</Benefit>
 									<Benefit>Cancel Anytime</Benefit>
-									<Benefit>Same price every month</Benefit>
-									<Benefit>Trusted by over 100,000</Benefit>
-									<Benefit>Made in USA</Benefit>
 								</div>
 							</div>
 						</div>
@@ -251,7 +269,7 @@ const Hero = () => {
 								'
 							>
 								<Image
-									src='/hero_img_6.avif'
+									src='/hero.png'
 									width={576}
 									height={854}
 									alt='Woman showing weight loss progress'

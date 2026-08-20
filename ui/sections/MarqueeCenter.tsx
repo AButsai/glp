@@ -1,7 +1,6 @@
 'use client'
 
 import { itemsCenter } from '@/constants/marquee-constants'
-import Container from '../components/Container'
 import Marquee from '../components/Marquee'
 import Section from '../components/Section'
 
@@ -12,9 +11,7 @@ const MarqueeCenter = ({}) => {
 				{"we've been featured all over"}
 			</p>
 			<Section className='bg-gray-200 p-5'>
-				<Container>
-					<Marquee items={itemsCenter} mode='img' />
-				</Container>
+				<Marquee items={itemsCenter} mode='img' isIcon={false} />
 			</Section>
 		</>
 	)
