@@ -11,14 +11,12 @@ const SeeHow = ({}) => {
 	return (
 		<Section className='py-5 md:py-10'>
 			<Container className='max-w-7xl'>
-				<h2 className='text-4xl font-bold text-center mb-8 md:text-6xl'>
+				<h2 className='font-roboto text-[32px] font-bold leading-[1.1] tracking-[0.24px]  sm:text-[44px] lg:text-[60px] lg:leading-[60px] text-center mb-5'>
 					Finally Lose Weight Without Fighting Hunger, Dieting Harder, or
 					Feeling Miserable
 				</h2>
 				<div className='md:grid md:grid-cols-[1.2fr_0.8fr] md:gap-5 md:items-stretch mb-5'>
-					{/* Image */}
 					<BeforeAfter />
-					{/* Calc */}
 
 					<WeightLossCalculator />
 				</div>

@@ -14,7 +14,11 @@ const MobNavigate = () => {
 	}
 	return (
 		<>
-			<button type='button' onClick={handleOpen} className='relative z-50'>
+			<button
+				type='button'
+				onClick={handleOpen}
+				className={` z-50 ${open ? 'fixed top-7 right-5' : 'relative'}`}
+			>
 				{open ? (
 					<RiCloseLargeFill className='size-6' />
 				) : (

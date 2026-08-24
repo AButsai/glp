@@ -27,7 +27,7 @@ const timelineItems = [
 	},
 	{
 		id: 5,
-		label: 'On-going care & support with Embody Nursing Staff',
+		label: 'On-going care & support with VelmoRx Nursing Staff',
 		title: 'Begin treatment',
 		labelClassName: 'text-[#C86ED8]',
 	},
@@ -78,7 +78,7 @@ const TreatmentTimelineBlock = () => {
 						<p
 							className='
 								min-w-0
-								text-xl
+								text-lg
 								font-semibold
 								leading-[1.2]
 								tracking-[-0.015em]
