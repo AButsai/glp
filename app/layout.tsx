@@ -38,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 				<Marquee
 					items={itemsTopHeader}
 					mode='text'
-					className='bg-white border-b border-b-gray-200'
+					className='border-b border-b-gray-200 bg-green-500/10'
 					isIcon
 				/>
 				<Marquee

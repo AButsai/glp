@@ -11,7 +11,7 @@ export const reviews: Review[] = [
 	{
 		id: 1,
 		title: 'Truly Easy And Affordable',
-		text: 'I completed the intake in just a few minutes and had my medication delivered to my door the same week. I’m down 38 lbs and still going. Embody made it truly easy and affordable.',
+		text: 'I completed the intake in just a few minutes and had my medication delivered to my door the same week. I’m down 38 lbs and still going. VelmoRx made it truly easy and affordable.',
 		author: 'Erin T.',
 		location: 'Denver, CO',
 		rating: 5,

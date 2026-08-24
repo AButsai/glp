@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { FaArrowRight, FaStar } from 'react-icons/fa'
 
 import { LINK_QUIZ } from '@/constants/base-constants'
+import { FiDollarSign, FiFileText, FiShield, FiTruck } from 'react-icons/fi'
 import Benefit from '../components/Benefit'
 import Container from '../components/Container'
 import Countdown from '../components/Countdown'
@@ -18,9 +19,9 @@ const Hero = () => {
 						via-[#D3EDE3]
 						to-[#C5E1D3] max-w-[98%] mx-auto'
 		>
-			<Container>
-				<div
-					className='
+			{/* <Container> */}
+			<div
+				className='
 						overflow-hidden
 						
 						p-4
@@ -31,9 +32,9 @@ const Hero = () => {
 						xl:px-12
 						xl:py-12
 					'
-				>
-					<div
-						className='
+			>
+				<div
+					className='
 							mx-auto
 							grid
 							w-full
@@ -46,10 +47,10 @@ const Hero = () => {
 							lg:gap-14
 							xl:gap-20
 						'
-					>
-						<div className='w-full min-w-0'>
-							<div
-								className='
+				>
+					<div className='w-full min-w-0'>
+						<div
+							className='
 									mb-3
 									flex
 									flex-col
@@ -58,23 +59,23 @@ const Hero = () => {
 									sm:items-center
 									sm:gap-3
 								'
-							>
-								<div className='flex shrink-0 gap-1'>
-									<FaStar className='size-4 text-[#F5B832] sm:size-5' />
-									<FaStar className='size-4 text-[#F5B832] sm:size-5' />
-									<FaStar className='size-4 text-[#F5B832] sm:size-5' />
-									<FaStar className='size-4 text-[#F5B832] sm:size-5' />
+						>
+							<div className='flex shrink-0 gap-1'>
+								<FaStar className='size-4 text-[#F5B832] sm:size-5' />
+								<FaStar className='size-4 text-[#F5B832] sm:size-5' />
+								<FaStar className='size-4 text-[#F5B832] sm:size-5' />
+								<FaStar className='size-4 text-[#F5B832] sm:size-5' />
 
-									<PartialStar />
-								</div>
-
-								<p className='text-xs leading-tight sm:text-sm'>
-									(4.4) Based on member-reported satisfaction ratings
-								</p>
+								<PartialStar />
 							</div>
 
-							<h1
-								className='
+							<p className='text-xs leading-tight sm:text-sm'>
+								(4.4) Based on member-reported satisfaction ratings
+							</p>
+						</div>
+
+						<h1
+							className='
 									mb-5
 									font-serif
 									text-[38px]
@@ -82,20 +83,18 @@ const Hero = () => {
 									sm:text-5xl
 									md:text-6xl
 									lg:text-[56px]
-									xl:text-7xl
+									xl:text-6xl
 								'
-							>
-								Lock in
-								<br />
-								<span className='italic text-[#0F7B5C]'>
-									your best GLP-1 price
-								</span>{' '}
-								— for life.
-							</h1>
+						>
+							Lock in <span className='italic text-[#0F7B5C]'>your best</span>
+							<br />
+							<span className='italic text-[#0F7B5C]'>GLP-1 price</span> — for
+							life.
+						</h1>
 
-							<div className='w-full'>
-								<div
-									className='
+						<div className='w-full'>
+							<div
+								className='
 										relative
 										overflow-hidden
 										rounded-2xl
@@ -106,21 +105,21 @@ const Hero = () => {
 										sm:px-5
 										sm:py-5
 									'
-								>
-									<div className='flex items-center gap-2 pr-14 sm:gap-3 sm:pr-20'>
-										<div className='shrink-0'>
-											<p className='font-serif text-lg leading-none sm:text-xl'>
-												Was{' '}
-												<span className='line-through decoration-2'>$199</span>
-											</p>
+							>
+								<div className='flex items-center gap-2 pr-14 sm:gap-3 sm:pr-20'>
+									<div className='shrink-0'>
+										<p className='font-serif text-lg leading-none sm:text-xl'>
+											Was{' '}
+											<span className='line-through decoration-2'>$199</span>
+										</p>
 
-											<p className='font-serif text-lg leading-none text-[#0F7B5C] sm:text-xl'>
-												Now starting at
-											</p>
-										</div>
+										<p className='font-serif text-lg leading-none text-[#0F7B5C] sm:text-xl'>
+											Now starting at
+										</p>
+									</div>
 
-										<p
-											className='
+									<p
+										className='
 												font-serif
 												text-[42px]
 												leading-none
@@ -128,21 +127,21 @@ const Hero = () => {
 												sm:text-5xl
 												md:text-[52px]
 											'
-										>
-											$89
-										</p>
-									</div>
+									>
+										$89
+									</p>
+								</div>
 
-									<div className='mt-4'>
-										<Countdown />
-									</div>
+								<div className='mt-4'>
+									<Countdown />
+								</div>
 
-									<Image
-										src='/product-bundle.png'
-										width={120}
-										height={164}
-										alt='GLP-1 medication'
-										className='
+								<Image
+									src='/product-bundle.png'
+									width={120}
+									height={164}
+									alt='GLP-1 medication'
+									className='
 											absolute
 											bottom-2
 											right-2
@@ -152,37 +151,29 @@ const Hero = () => {
 											sm:w-[55px]
 											md:w-[120px]
 										'
-									/>
-								</div>
-
-								{/* <p className='mt-1 text-right text-[11px] sm:text-sm'>
-									Compound GLP-1 & GLP-1 + GIP
-								</p> */}
+								/>
 							</div>
+						</div>
 
-							<div className='space-y-1 mt-5'>
-								<Benefit>
-									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
-									Same price, every dose, every month.
-								</Benefit>
-								<Benefit>
-									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
-									Made in USA & Trusted by over 100,000
-								</Benefit>
-								<Benefit>
-									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
-									Prescription & online medical visits included.
-								</Benefit>
-								<Benefit>
-									<span className='inline-block w-1.5 h-1.5 rounded-full bg-black'></span>{' '}
-									Free shipping.Arrives in 1-2 days.
-								</Benefit>
-							</div>
+						<div className='space-y-1 mt-5'>
+							<Benefit Icon={FiDollarSign}>
+								Same price, every dose, every month.
+							</Benefit>
+							<Benefit Icon={FiShield}>
+								Made in USA & Trusted by over 100,000
+							</Benefit>
+							<Benefit Icon={FiFileText}>
+								Prescription & online medical visits included.
+							</Benefit>
+							<Benefit Icon={FiTruck}>
+								Free shipping. Arrives in 1-2 days.
+							</Benefit>
+						</div>
 
-							<div className='mt-4'>
-								<Link
-									href={LINK_QUIZ}
-									className='
+						<div className='mt-4'>
+							<Link
+								href={LINK_QUIZ}
+								className='
 										flex
 										w-full
 										items-center
@@ -201,10 +192,10 @@ const Hero = () => {
 										sm:pl-6
 										sm:text-xl
 									'
-								>
-									Get Started
-									<span
-										className='
+							>
+								Get Started
+								<span
+									className='
 											flex
 											size-9
 											shrink-0
@@ -214,32 +205,39 @@ const Hero = () => {
 											bg-white
 											sm:size-10
 										'
-									>
-										<FaArrowRight className='size-4 text-[#0F7B5C]' />
-									</span>
-								</Link>
+								>
+									<FaArrowRight className='size-4 text-[#0F7B5C]' />
+								</span>
+							</Link>
 
-								<div
-									className='
+							<div
+								className='
 										mt-4
 										grid
-										grid-cols-1
-										gap-x-6
+										gap-x-1
 										gap-y-2.5
-										min-[380px]:grid-cols-2
+									  grid-cols-2
 										sm:gap-x-8
 									'
-								>
-									<Benefit>$0 until a doctor approves you</Benefit>
-									<Benefit>No Hidden Fees</Benefit>
-									<Benefit>No Monthly Membership</Benefit>
-									<Benefit>Cancel Anytime</Benefit>
-								</div>
+							>
+								<Benefit className='text-xs sm:text-sm' classNameIcon='size-3'>
+									$0 until a doctor approves you
+								</Benefit>
+								<Benefit className='text-xs sm:text-sm' classNameIcon='size-3'>
+									No Hidden Fees
+								</Benefit>
+								<Benefit className='text-xs sm:text-sm' classNameIcon='size-3'>
+									No Monthly Membership
+								</Benefit>
+								<Benefit className='text-xs sm:text-sm' classNameIcon='size-3'>
+									Cancel Anytime
+								</Benefit>
 							</div>
 						</div>
+					</div>
 
-						<div
-							className='
+					<div
+						className='
 								flex
 								w-full
 								items-end
@@ -247,9 +245,9 @@ const Hero = () => {
 								lg:h-full
 								
 							'
-						>
-							<div
-								className='
+					>
+						<div
+							className='
 									w-full
 									max-w-[340px]
 									overflow-hidden
@@ -258,16 +256,16 @@ const Hero = () => {
 									md:max-w-[480px]
 									lg:max-w-[395px]
 								'
-							>
-								<Image
-									src='/hero.png'
-									width={576}
-									height={854}
-									alt='Woman showing weight loss progress'
-									priority
-									className='block h-auto w-full'
-									style={{
-										maskImage: `
+						>
+							<Image
+								src='/hero.png'
+								width={576}
+								height={854}
+								alt='Woman showing weight loss progress'
+								priority
+								className='block h-auto w-full'
+								style={{
+									maskImage: `
 											linear-gradient(
 												to bottom,
 												black 0%,
@@ -282,9 +280,9 @@ const Hero = () => {
 												transparent 100%
 											)
 										`,
-										maskComposite: 'intersect',
+									maskComposite: 'intersect',
 
-										WebkitMaskImage: `
+									WebkitMaskImage: `
 											linear-gradient(
 												to bottom,
 												black 0%,
@@ -299,14 +297,14 @@ const Hero = () => {
 												transparent 100%
 											)
 										`,
-										WebkitMaskComposite: 'source-in',
-									}}
-								/>
-							</div>
+									WebkitMaskComposite: 'source-in',
+								}}
+							/>
 						</div>
 					</div>
 				</div>
-			</Container>
+			</div>
+			{/* </Container> */}
 		</Section>
 	)
 }

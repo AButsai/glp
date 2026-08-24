@@ -18,18 +18,18 @@ const Footer = () => {
 					<p className='text-center uppercase text-lg font-semibold'>
 						get started
 					</p>
-					<h2 className='text-4xl font-bold text-center mb-8 md:text-5xl max-w-[768px] mx-auto w-full'>
+					<h2 className='font-roboto text-[32px] font-bold leading-[1.1] tracking-[0.24px]  sm:text-[44px] lg:text-[60px] lg:leading-[60px] text-center md:w-2/3 mx-auto'>
 						Ready to Stop Food Cravings? Get $200 OFF your prescription
 						instantly!
 					</h2>
-					<p className='text-center w-full md:w-1/4 mx-auto mb-10'>
+					<p className='max-w-[560px] font-roboto text-[16px] leading-[1.5] text-[#4b5563] lg:text-[20px] lg:leading-[28px] mx-auto text-center mb-5 mt-5'>
 						{
 							"It's not cheating, it's science! Lose up to 15% of your body weight (1-2lbs per week) with medically supervised safe & effective treatment from the comfort of your home."
 						}
 					</p>
 					<LinkQuiz
 						title='Get started'
-						className='bg-black text-white rounded-4xl p-5 text-xl hover:bg-[#0F7B5C] lg:w-50 mx-auto block w-1/2'
+						className=' text-white rounded-4xl p-5 text-xl bg-[#0F7B5C] hover:bg-[#0f7b5cd0] lg:w-50 mx-auto block w-1/2'
 					/>
 				</div>
 				<div className='border-t border-t-gray-400 border-b border-b-gray-400'>
@@ -92,7 +92,7 @@ const Footer = () => {
 			</div>
 			<div className='py-6 bg-[#0F7B5C]'>
 				<p className='text-sm text-center text-white'>
-					© 2026 Embody - Modern Metabolic Medicine, Inc. All rights reserved.
+					© 2026 VelmoRx - Modern Metabolic Medicine, Inc. All rights reserved.
 				</p>
 			</div>
 		</footer>

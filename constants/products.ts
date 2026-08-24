@@ -4,19 +4,21 @@ export const products = [
 	{
 		id: 1,
 		title: 'Compounded Semaglutide',
-		// subtitle: 'Injections & Gum',
-		subtitle: '',
+		subtitle:
+			'Includes telehealth consultations, personalized care plan, and Compounded Semaglutide if prescribed by your provider',
 		image: '/product-2.png',
-		badge: 'In Stock · Starting at 97',
+		price: 'Starting at 97',
+		badge: 'Get Started',
 		href: LINK_QUIZ,
 	},
 	{
 		id: 2,
 		title: 'Compounded Tirzepatide',
-		// subtitle: 'Injections & Gum',
-		subtitle: '',
+		subtitle:
+			'Includes telehealth consultations, personalized care plan, and Compounded Tirzepatide if prescribed by your provider',
 		image: '/product-1.png',
-		badge: 'In Stock · Starting at 147',
+		price: 'Starting at 147',
+		badge: 'Get Started',
 		href: LINK_QUIZ,
 	},
 ]

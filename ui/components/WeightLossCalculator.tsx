@@ -21,7 +21,7 @@ const WeightLossCalculator: FC<Props> = ({
 
 	return (
 		<div className='rounded-4xl bg-white px-6 pb-6 pt-8'>
-			<h2 className='mx-auto max-w-90 text-center text-[34px]  font-bold leading-[1.1] text-[#111827] md:text-left'>
+			<h2 className='font-roboto text-[32px] font-bold leading-[1.1] tracking-[0.24px]    text-center'>
 				{"Let's See How much weight can you shed by next spring?"}
 			</h2>
 
@@ -32,13 +32,13 @@ const WeightLossCalculator: FC<Props> = ({
 			</p>
 
 			<div className='mx-auto flex h-16 w-44 items-center justify-center rounded-full border border-[#d5d5d5]'>
-				<span className='text-[40px] font-normal leading-none text-black'>
+				<span className='text-4xl font-normal leading-none text-black'>
 					{weight}
 				</span>
 			</div>
 
 			<div className='relative mt-12 h-16 w-full'>
-				<div className='absolute left-0 top-1/2 h-2 w-full -translate-y-1/2 bg-[#234d82]' />
+				<div className='absolute left-0 top-1/2 h-2 w-full -translate-y-1/2 bg-[#0F7B5C]' />
 
 				<div
 					className='pointer-events-none absolute top-1/2 z-10 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#fafafa] shadow-sm'
@@ -65,19 +65,22 @@ const WeightLossCalculator: FC<Props> = ({
 			</div>
 
 			{/* Result */}
-			<div className='mt-5 flex min-h-28 items-center justify-center gap-8 rounded-full bg-linear-to-r from-[#267889] to-[#37a99c] px-8 py-4 text-white'>
-				<p className='max-w-32 text-center text-[22px] font-bold leading-[1.15]'>
-					You could easily lose:
+			<div className='mt-5 flex min-h-20 items-center justify-center gap-8 rounded-full bg-linear-to-r from-[#0F7B5C] via-[#15aa80] to-[#0F7B5C] px-8 py-4 text-white'>
+				<p className=' text-center text-lg font-bold leading-[1.15]'>
+					You could lose:
 				</p>
 
 				<div className='flex items-baseline gap-2'>
-					<span className='text-[48px] font-bold leading-none'>
-						{lossWeight}
-					</span>
+					<span className='text-4xl font-bold leading-none'>{lossWeight}</span>
 
-					<span className='text-[42px] font-bold leading-none'>lbs</span>
+					<span className='text-3xl font-bold leading-none'>lbs</span>
 				</div>
 			</div>
+			<p className='mt-6 max-w-[640px] text-center text-[12px]/[18px] text-[#6b7280]'>
+				This calculator provides an estimate only and is not a prediction of
+				your individual results. Actual weight loss depends on multiple clinical
+				factors and is determined in consultation with your healthcare provider.
+			</p>
 		</div>
 	)
 }

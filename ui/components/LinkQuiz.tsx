@@ -15,7 +15,7 @@ const LinkQuiz: FC<Props> = ({ title, className }) => {
 		<Link
 			href={LINK_QUIZ}
 			className={twMerge(
-				'py-1 px-3 bg-[#0F7B5C] text-center text-white rounded-xl transition duration-200',
+				'py-1 px-3 text-sm bg-[#0F7B5C] text-center text-white rounded-xl transition duration-200',
 				className,
 			)}
 		>

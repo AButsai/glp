@@ -16,10 +16,8 @@ const TrustRating = ({
 			className='flex items-center gap-2 justify-center'
 			aria-label={`${rating} out of ${maxRating}, ${customers} happy customers`}
 		>
-			{/* Rating text */}
 			<p className='shrink-0 font-bold leading-none'>Excellent {rating}</p>
 
-			{/* Stars */}
 			<div className='flex shrink-0 gap-0.5'>
 				{Array.from({ length: maxRating }).map((_, index) => {
 					const fill = Math.max(0, Math.min(1, rating - index))
@@ -29,22 +27,19 @@ const TrustRating = ({
 							key={index}
 							className='relative flex size-5 items-center justify-center overflow-hidden bg-gray-300'
 						>
-							{/* Green fill */}
 							<div
-								className='absolute inset-y-0 left-0 bg-[#00B67A]'
+								className='absolute inset-y-0 left-0 bg-[#0F7B5C]'
 								style={{
 									width: `${fill * 100}%`,
 								}}
 							/>
 
-							{/* Star */}
 							<FaStar className='relative z-10 size-[16px] text-white' />
 						</div>
 					)
 				})}
 			</div>
 
-			{/* Customers */}
 			<div className='shrink-0 leading-none'>
 				<p className='text-base font-bold leading-none'>{customers}</p>
 
