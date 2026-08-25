@@ -14,7 +14,7 @@ export default function Home() {
 			<Hero />
 			<MarqueeCenter />
 			<ProductSection />
-			<Section className='mt-10 rounded-tl-4xl rounded-tr-4xl bg-green-200 shadow-[0_-8px_12px_-6px_rgba(0,0,0,0.25)] pt-20 overflow-hidden'>
+			<Section className='mt-10 rounded-tl-4xl rounded-tr-4xl 	bg-linear-to-br from-[#DCF6EC] via-[#D3EDE3] to-[#C5E1D3] shadow-[0_-8px_12px_-6px_rgba(0,0,0,0.25)] pt-20 overflow-hidden'>
 				<HelpYou />
 				<TreatmentTimeline />
 				<ReviewsSection />
