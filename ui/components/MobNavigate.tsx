@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { RiCloseLargeFill } from 'react-icons/ri'
 import { RxHamburgerMenu } from 'react-icons/rx'
+import LinkQuiz from './LinkQuiz'
 import Logo from './Logo'
 
 const MobNavigate = () => {
@@ -34,20 +35,41 @@ const MobNavigate = () => {
 				<Logo className=' mb-10' />
 				<div className='mt-10'>
 					<nav className='flex gap-3 flex-col '>
-						<Link className='text-xl' onClick={handleOpen} href='#how'>
+						<Link
+							className='text-sm font-medium text-[#374151] hover:text-accentColor1 transition-colors cursor-pointer'
+							onClick={handleOpen}
+							href='#how'
+						>
 							How it works
 						</Link>
-						<Link className='text-xl' onClick={handleOpen} href='#reviews'>
+						<Link
+							className='text-sm font-medium text-[#374151] hover:text-accentColor1 transition-colors cursor-pointer'
+							onClick={handleOpen}
+							href='#reviews'
+						>
 							Reviews
 						</Link>
-						<Link className='text-xl' onClick={handleOpen} href='#faq'>
+						<Link
+							className='text-sm font-medium text-[#374151] hover:text-accentColor1 transition-colors cursor-pointer'
+							onClick={handleOpen}
+							href='#faq'
+						>
 							FAQ`s
 						</Link>
-						<Link className='text-xl' onClick={handleOpen} href={LINK_QUIZ}>
+						<Link
+							className='text-sm font-medium text-[#374151] hover:text-accentColor1 transition-colors cursor-pointer'
+							onClick={handleOpen}
+							href={LINK_QUIZ}
+						>
 							Pricing
 						</Link>
 					</nav>
 				</div>
+
+				<LinkQuiz
+					title='2-MINUTE ASSESSMENT'
+					className='flex w-full min-h-[52px] items-center justify-center rounded-full bg-[#0f7b5c] px-4 text-center text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#0c6048] active:scale-[0.99] mt-5'
+				/>
 			</div>
 		</>
 	)
