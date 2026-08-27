@@ -1,3 +1,5 @@
+import { PARTNER_PHARMACY, PROVIDER_GROUP } from './base-constants'
+
 export type FaqContentBlock =
 	| {
 			type: 'paragraph'
@@ -98,6 +100,10 @@ export const faqItems: FaqItem[] = [
 			{
 				type: 'paragraph',
 				text: 'VelmoRx currently provides services to all US States except Louisiana. In Nebraska, services are limited to patients 19 years of age or older.',
+			},
+			{
+				type: 'note',
+				text: 'Services are available only in jurisdictions where affiliated medical providers are licensed to practice and where pharmacy partners are authorized to dispense medications. Availability may vary by state and is subject to applicable laws, regulations, and licensure requirements.',
 			},
 		],
 	},
@@ -237,6 +243,44 @@ export const faqItems: FaqItem[] = [
 			{
 				type: 'paragraph',
 				text: "You can reach our friendly support team by calling us at (347) 269-4270. For faster service, visit our Patient Services page to submit a message, request a refill, or check order status. We're here to help!",
+			},
+		],
+	},
+	{
+		id: 14,
+		question: 'Who fills and ships my prescription?',
+		image: '/question/avatar-9.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: `Prescriptions placed through VelmoRx are compounded and dispensed by our partner pharmacy, ${PARTNER_PHARMACY.name}, ${PARTNER_PHARMACY.address}. Phone: ${PARTNER_PHARMACY.phone}. Website: ${PARTNER_PHARMACY.website}.`,
+			},
+			{
+				type: 'paragraph',
+				text: `${PARTNER_PHARMACY.name} is licensed by state boards of pharmacy nationwide and supports prescription fulfillment in all 50 U.S. states through affiliated medical providers and pharmacy partners operating in accordance with applicable state licensure requirements.`,
+			},
+			{
+				type: 'note',
+				text: 'Please note that certain medications, formulations, or fulfillment options may vary depending on state-specific pharmacy regulations, prescribing requirements, and dispensing restrictions.',
+			},
+		],
+	},
+	{
+		id: 15,
+		question: 'Who are the medical providers reviewing my case?',
+		image: '/question/avatar-6.png',
+		content: [
+			{
+				type: 'paragraph',
+				text: `Your intake is reviewed by independent, licensed providers affiliated with ${PROVIDER_GROUP.name}, ${PROVIDER_GROUP.address}. Provider website: ${PROVIDER_GROUP.website}. Contact: ${PROVIDER_GROUP.contactEmail}.`,
+			},
+			{
+				type: 'unordered-list',
+				items: [`${PROVIDER_GROUP.doctorName} — NPI# ${PROVIDER_GROUP.npi}`],
+			},
+			{
+				type: 'note',
+				text: 'Each provider is licensed to practice in, and prescribe to, the state where you are located at the time of your visit.',
 			},
 		],
 	},
