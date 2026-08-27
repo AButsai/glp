@@ -29,7 +29,7 @@ export const trustBarItems = [
 	{
 		id: 1,
 		icon: LuStar,
-		text: 'US-Certified Pharmacy',
+		text: 'Licensed U.S. Pharmacy',
 	},
 	{
 		id: 2,

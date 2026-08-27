@@ -1,8 +1,10 @@
-import Image from 'next/image'
+import { COMPANY } from '@/constants/base-constants'
 import Link from 'next/link'
 import Container from '../components/Container'
 import LinkQuiz from '../components/LinkQuiz'
 import Logo from '../components/Logo'
+
+// import Image from 'next/image'
 
 const Footer = () => {
 	return (
@@ -36,18 +38,21 @@ const Footer = () => {
 					<Container className='py-12 grid grid-cols-1 md:grid-cols-6 gap-10 text-sm '>
 						<Logo className=' md:col-span-1' />
 						<div className='text-sm space-y-2 md:col-span-1'>
-							<p className='font-medium text-inherit'>Links</p>
+							<p className='font-medium text-inherit'>Legal</p>
 							<nav className='flex flex-col space-y-2'>
-								<Link className='text-inherit' href={'#'}>
+								<Link className='text-inherit' href={'/terms'}>
 									Terms & Conditions
 								</Link>
-								<Link className='text-inherit' href={'#'}>
+								<Link className='text-inherit' href={'/privacy'}>
 									Privacy Policy
 								</Link>
-								<Link className='text-inherit' href={'#'}>
+								<Link className='text-inherit' href={'/refund'}>
 									Refund Policy
 								</Link>
-								<Link className='text-inherit' href={'#'}>
+								<Link
+									className='text-inherit'
+									href={`tel:${COMPANY.phone.replace(/[^\d+]/g, '')}`}
+								>
 									Contact Us
 								</Link>
 							</nav>
@@ -68,27 +73,43 @@ const Footer = () => {
 								of a type of thyroid cancer called MTC or MEN 2.
 							</p>
 							<p className='mb-2'>
-								These statements have not been evaluated by the FDA. This
-								product is not intended to diagnose, treat, cure or prevent any
-								disease.
-							</p>
-							<p className='mb-2'>
-								+ Wegovy® is for weight loss. Ozempic® is for type 2 diabetes
-								treatment but may be prescribed for weight loss. All trademarks
-								and brand names belong to their respective owners.
+								Compounded medications are not approved by the FDA, and the FDA
+								does not review compounded medications for safety,
+								effectiveness, or manufacturing quality. Compounded medications
+								are not generic versions of, and are not equivalent to, any
+								branded medication.
 							</p>
 							<p className='mb-2'>
 								Medical treatment is provided and approved by a licensed medical
 								professional.
 							</p>
+							<div className='mt-4 rounded-lg bg-black/5 p-4 text-xs leading-relaxed'>
+								<p className='mb-1 font-semibold text-inherit'>
+									Jurisdictional notice
+								</p>
+								<p>
+									Services are available only in jurisdictions where affiliated
+									medical providers are licensed to practice and where pharmacy
+									partners are authorized to dispense medications. Availability
+									may vary by state and is subject to applicable laws,
+									regulations, and licensure requirements.
+								</p>
+							</div>
 						</div>
 					</Container>
 				</div>
-				<div className='flex py-6 justify-center'>
+				{/*
+
+					<div className='flex py-6 justify-center'>
 					<div className='w-[73px] h-[79px]'>
 						<Image src={'/legitscript.avif'} width={256} height={277} alt='' />
 					</div>
 				</div>
+
+					LegitScript badge removed until certification is confirmed.
+					Re-add the /legitscript.avif logo here once VelmoRx is
+					officially LegitScript certified (checklist item 10).
+				*/}
 			</div>
 			<div className='py-6 bg-[#0F7B5C]'>
 				<p className='text-sm text-center text-white'>
