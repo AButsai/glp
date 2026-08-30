@@ -46,6 +46,9 @@ const Footer = () => {
 								<Link className='text-inherit' href={'/privacy'}>
 									Privacy Policy
 								</Link>
+								<Link className='text-inherit' href={'/hipaa'}>
+									HIPAA Notice of Privacy Practices
+								</Link>
 								<Link className='text-inherit' href={'/refund'}>
 									Refund Policy
 								</Link>
