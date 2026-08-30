@@ -66,11 +66,11 @@ const Hero = () => {
 								<FaStar className='size-4 text-[#F5B832] sm:size-5' />
 								<FaStar className='size-4 text-[#F5B832] sm:size-5' />
 
-								<PartialStar />
+								<PartialStar percent={80} />
 							</div>
 
 							<p className='text-xs leading-tight sm:text-sm'>
-								(4.4) Based on member-reported satisfaction ratings
+								(4.8) Based on member-reported satisfaction ratings
 							</p>
 						</div>
 
@@ -171,44 +171,72 @@ const Hero = () => {
 						</div>
 
 						<div className='mt-4'>
-							<Link
-								href={LINK_QUIZ}
-								className='
-										flex
-										w-full
-										items-center
-										justify-between
-										rounded-full
-										bg-[#0F7B5C]
-										py-2
-										pl-5
-										pr-2
-										text-lg
-										font-bold
-										text-white
-										transition-opacity
-										hover:opacity-90
-										sm:py-2.5
-										sm:pl-6
-										sm:text-xl
-									'
-							>
-								Get Started
-								<span
+							<div className='flex flex-col gap-3 sm:flex-row'>
+								<Link
+									href={LINK_QUIZ}
 									className='
 											flex
-											size-9
-											shrink-0
+											flex-1
+											items-center
+											justify-between
+											rounded-full
+											bg-[#0F7B5C]
+											py-2
+											pl-5
+											pr-2
+											text-lg
+											font-bold
+											text-white
+											transition-opacity
+											hover:opacity-90
+											sm:py-2.5
+											sm:pl-6
+											sm:text-xl
+										'
+								>
+									Get Started
+									<span
+										className='
+												flex
+												size-9
+												shrink-0
+												items-center
+												justify-center
+												rounded-full
+												bg-white
+												sm:size-10
+											'
+									>
+										<FaArrowRight className='size-4 text-[#0F7B5C]' />
+									</span>
+								</Link>
+
+								<Link
+									href={LINK_QUIZ}
+									className='
+											flex
+											flex-1
 											items-center
 											justify-center
 											rounded-full
+											border
+											border-gray-300
 											bg-white
-											sm:size-10
+											px-6
+											py-2
+											text-lg
+											font-bold
+											text-[#0F7B5C]
+											transition-colors
+											hover:bg-[#0F7B5C]
+											hover:text-white
+											sm:py-2.5
+											sm:text-xl
 										'
 								>
-									<FaArrowRight className='size-4 text-[#0F7B5C]' />
-								</span>
-							</Link>
+									See Pricing
+								</Link>
+							</div>
 
 							<div
 								className='

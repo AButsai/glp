@@ -1,8 +1,18 @@
-import { PARTNER_PHARMACY, PROVIDER_GROUP } from './base-constants'
+import { COMPANY, PARTNER_PHARMACY, PROVIDER_GROUP } from './base-constants'
+
+// Кликабельная ссылка на звонок — используется в ответах, где раньше был
+// просто текст с номером телефона.
+const PHONE_LINK = `<a href="tel:${COMPANY.phone.replace(/[^\d+]/g, '')}" style="color: #0F7B5C; text-decoration: underline;">${COMPANY.phone}</a>`
 
 export type FaqContentBlock =
 	| {
 			type: 'paragraph'
+			text: string
+	  }
+	| {
+			// Как 'paragraph', но text рендерится как HTML —
+			// используется точечно, когда нужна кликабельная ссылка (например, tel:).
+			type: 'paragraph-html'
 			text: string
 	  }
 	| {
@@ -128,8 +138,8 @@ export const faqItems: FaqItem[] = [
 		image: '/question/avatar-6.png',
 		content: [
 			{
-				type: 'paragraph',
-				text: 'With VelmoRx there are no contracts for our month to month pricing. We also offer subscribe and save discounts where customers will agree to a subscription length for stated monthly discount. Month to month customers can cancel their shipment anytime by calling us at (347) 269-4270.',
+				type: 'paragraph-html',
+				text: `With VelmoRx there are no contracts for our month to month pricing. We also offer subscribe and save discounts where customers will agree to a subscription length for stated monthly discount. Month to month customers can cancel their shipment anytime by calling us at ${PHONE_LINK}.`,
 			},
 			{
 				type: 'paragraph',
@@ -219,8 +229,8 @@ export const faqItems: FaqItem[] = [
 				text: "Prescriptions received before 2 pm central time will be shipped the same day. Your prescription will be shipped next-day via UPS in a temperature controlled package. To ensure temperature management and weekend orders (Friday-Sunday) will be shipped Monday. You'll receive a tracking number for every shipment.",
 			},
 			{
-				type: 'paragraph',
-				text: 'Each shipment is fully insured for lost prescriptions. The only exception for insured product replacement is if a patient provides incorrect shipping information. If this occurs, please speak with customer service by calling us at (347) 269-4270.',
+				type: 'paragraph-html',
+				text: `Each shipment is fully insured for lost prescriptions. The only exception for insured product replacement is if a patient provides incorrect shipping information. If this occurs, please speak with customer service by calling us at ${PHONE_LINK}.`,
 			},
 		],
 	},
@@ -241,8 +251,8 @@ export const faqItems: FaqItem[] = [
 		image: '/question/avatar-13.png',
 		content: [
 			{
-				type: 'paragraph',
-				text: "You can reach our friendly support team by calling us at (347) 269-4270. For faster service, visit our Patient Services page to submit a message, request a refill, or check order status. We're here to help!",
+				type: 'paragraph-html',
+				text: `You can reach our friendly support team by calling us at ${PHONE_LINK}. For faster service, visit our Patient Services page to submit a message, request a refill, or check order status. We're here to help!`,
 			},
 		],
 	},

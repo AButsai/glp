@@ -7,7 +7,8 @@ export const products = [
 		subtitle:
 			'Includes telehealth consultations, personalized care plan, and Compounded Semaglutide if prescribed by your provider',
 		image: '/product-2.png',
-		price: 'Starting at 97',
+		price:
+			'Starting at <span class="line-through decoration-2 opacity-60">$199</span> $89',
 		badge: 'Get Started',
 		href: LINK_QUIZ,
 	},
@@ -17,7 +18,8 @@ export const products = [
 		subtitle:
 			'Includes telehealth consultations, personalized care plan, and Compounded Tirzepatide if prescribed by your provider',
 		image: '/product-1.png',
-		price: 'Starting at 147',
+		price:
+			'Starting at <span class="line-through decoration-2 opacity-60">$399</span> $149',
 		badge: 'Get Started',
 		href: LINK_QUIZ,
 	},

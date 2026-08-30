@@ -1,12 +1,12 @@
 export const LINK_QUIZ = process.env.NEXT_PUBLIC_ALLOW_URL!
 
 export const COMPANY = {
-	legalName: 'VelmoRx - Modern Metabolic Medicine, Inc.',
+	legalName: 'EDLYNN ENTERPRISE, LLC',
 	displayName: 'VelmoRx',
-	address: '[TODO: юридический адрес компании]',
-	phone: '(347) 269-4270',
-	email: '[TODO: email службы поддержки / compliance]',
-	domain: '[TODO: домен сайта, напр. velmorx.com]',
+	address: '70 Northwest 25th Street, APT 645, Miami, FL 33127, United States',
+	phone: '(305) 833-7580',
+	email: 'hello@velmorx.com',
+	domain: 'velmorx.com',
 }
 
 export const PARTNER_PHARMACY = {
