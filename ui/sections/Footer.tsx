@@ -49,6 +49,15 @@ const Footer = () => {
 								<Link className='text-inherit' href={'/refund'}>
 									Refund Policy
 								</Link>
+								<Link className='text-inherit' href={'/shipping'}>
+									Shipping Policy
+								</Link>
+								<Link className='text-inherit' href={'/telehealth-consent'}>
+									Consent to Telehealth
+								</Link>
+								<Link className='text-inherit' href={'/physician-code'}>
+									Physician Code of Conduct
+								</Link>
 								<Link
 									className='text-inherit'
 									href={`tel:${COMPANY.phone.replace(/[^\d+]/g, '')}`}
@@ -113,7 +122,7 @@ const Footer = () => {
 			</div>
 			<div className='py-6 bg-[#0F7B5C]'>
 				<p className='text-sm text-center text-white'>
-					© 2026 VelmoRx - Modern Metabolic Medicine, Inc. All rights reserved.
+					© 2026 {COMPANY.legalName} d/b/a VelmoRx. All rights reserved.
 				</p>
 			</div>
 		</footer>

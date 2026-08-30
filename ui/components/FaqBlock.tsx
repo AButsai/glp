@@ -107,6 +107,9 @@ const FaqContent: FC<FaqContentProps> = ({ block }) => {
 		case 'paragraph':
 			return <p>{block.text}</p>
 
+		case 'paragraph-html':
+			return <p dangerouslySetInnerHTML={{ __html: block.text }} />
+
 		case 'subtitle':
 			return <p className='font-medium text-[#344054]'>{block.text}</p>
 

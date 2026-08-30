@@ -55,9 +55,10 @@ const ProductCard = ({
 					{subtitle}
 				</p>
 
-				<p className='mt-auto shrink-0 whitespace-nowrap pt-2 font-roboto text-[16px] leading-[24px] text-[#0F7B5C] lg:text-right lg:text-[18px] lg:leading-[28px] md:font-semibold'>
-					{price}
-				</p>
+				<p
+					className='mt-auto shrink-0 whitespace-nowrap pt-2 font-roboto text-[16px] leading-[24px] text-[#0F7B5C] lg:text-right lg:text-[18px] lg:leading-[28px] md:font-semibold'
+					dangerouslySetInnerHTML={{ __html: price }}
+				/>
 			</div>
 
 			<div className='mt-3 shrink-0'>
