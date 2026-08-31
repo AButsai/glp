@@ -70,6 +70,13 @@ const MobNavigate = () => {
 					title='2-MINUTE ASSESSMENT'
 					className='flex w-full min-h-[52px] items-center justify-center rounded-full bg-[#0f7b5c] px-4 text-center text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#0c6048] active:scale-[0.99] mt-5'
 				/>
+				<Link
+					className='mt-3 flex w-full min-h-[52px] items-center justify-center rounded-full border border-[#0f7b5c] px-4 text-center text-sm font-bold uppercase tracking-wide text-[#0f7b5c] transition hover:bg-[#0f7b5c] hover:text-white active:scale-[0.99]'
+					onClick={handleOpen}
+					href='/login'
+				>
+					Log In
+				</Link>
 			</div>
 		</>
 	)

@@ -7,6 +7,10 @@ import Section from '../components/Section'
 import TrustBar from '../components/TrustBar'
 import WeightLossCalculator from '../components/WeightLossCalculator'
 
+// Weight-loss calculator temporarily hidden for review (2026-08-31).
+// Flip back to true to restore it (and the two-column grid below).
+const SHOW_WEIGHT_LOSS_CALCULATOR = false
+
 const SeeHow = ({}) => {
 	return (
 		<Section className='py-5 md:py-10'>
@@ -15,10 +19,16 @@ const SeeHow = ({}) => {
 					Finally Lose Weight Without Fighting Hunger, Dieting Harder, or
 					Feeling Miserable
 				</h2>
-				<div className='md:grid md:grid-cols-[1.2fr_0.8fr] md:gap-5 md:items-stretch mb-5'>
+				<div
+					className={
+						SHOW_WEIGHT_LOSS_CALCULATOR
+							? 'md:grid md:grid-cols-[1.2fr_0.8fr] md:gap-5 md:items-stretch mb-5'
+							: 'mx-auto mb-5 max-w-xl'
+					}
+				>
 					<BeforeAfter />
 
-					<WeightLossCalculator />
+					{SHOW_WEIGHT_LOSS_CALCULATOR && <WeightLossCalculator />}
 				</div>
 				<TrustBar />
 				<ButtonRatingBlock />

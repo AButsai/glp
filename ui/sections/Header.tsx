@@ -38,7 +38,15 @@ const Header = () => {
 							Pricing
 						</Link>
 					</nav>
-					<LinkQuiz title='2-MINUTE ASSESSMENT' />
+					<div className='flex items-center gap-3'>
+						<LinkQuiz title='2-MINUTE ASSESSMENT' />
+						<Link
+							className='rounded-xl border border-[#0F7B5C] px-3 py-1 text-center text-sm text-[#0F7B5C] transition duration-200 hover:bg-[#0F7B5C] hover:text-white'
+							href='/login'
+						>
+							Log In
+						</Link>
+					</div>
 				</div>
 
 				<div className='flex flex-1 items-center md:hidden'>
