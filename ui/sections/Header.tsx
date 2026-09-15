@@ -42,7 +42,7 @@ const Header = () => {
 						<LinkQuiz title='2-MINUTE ASSESSMENT' />
 						<Link
 							className='rounded-xl border border-[#0F7B5C] px-3 py-1 text-center text-sm text-[#0F7B5C] transition duration-200 hover:bg-[#0F7B5C] hover:text-white'
-							href='/login'
+							href='https://my.velmorx.com'
 						>
 							Log In
 						</Link>
