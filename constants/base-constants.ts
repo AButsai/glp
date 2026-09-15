@@ -1,4 +1,4 @@
-export const LINK_QUIZ = 'https://google.com'
+export const LINK_QUIZ = 'https://start.velmorx.com/start-online-visit/glp1'
 
 export const COMPANY = {
 	legalName: 'EDLYNN ENTERPRISE, LLC',
