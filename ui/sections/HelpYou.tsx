@@ -35,7 +35,7 @@ const HelpYou = ({}) => {
 					className='mx-auto mt-10'
 				/>
 
-				<VideoTestimonialsSlider items={videoTestimonials} />
+				{/* <VideoTestimonialsSlider items={videoTestimonials} /> */}
 
 				<div className='mt-10 w-full max-w-4/5 mx-auto'>
 					<p className='text-3xl text-center'>
