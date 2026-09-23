@@ -19,8 +19,8 @@ export default function Home() {
 				<TreatmentTimeline />
 				{/* <ReviewsSection /> */}
 			</Section>
-			<SeeHow />
-			<FaqSection />
+			{/* <SeeHow /> */}
+			{/* <FaqSection /> */}
 		</>
 	)
 }
