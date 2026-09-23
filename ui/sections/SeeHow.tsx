@@ -26,7 +26,7 @@ const SeeHow = ({}) => {
 							: 'mx-auto mb-5 max-w-xl'
 					}
 				>
-					<BeforeAfter />
+					{/* <BeforeAfter /> */}
 
 					{SHOW_WEIGHT_LOSS_CALCULATOR && <WeightLossCalculator />}
 				</div>
